@@ -1,0 +1,8 @@
+{
+  "suite_version": "1.0",
+  "tasks": [
+    {"id":"fix-zero-classification","description":"Fix classify_number so negative, zero and positive values receive the correct distinct labels. Preserve behavior for existing positive and negative cases.","fixture":"examples/fixtures/fix-zero-classification","target_file":"solution.py","required_skill":"python-bugfix","timeout_seconds":20,"suite_version":"1.0","tags":["logic","edge-case"]},
+    {"id":"fix-safe-divide","description":"Make safe_divide return None for a zero denominator instead of raising ZeroDivisionError, preserving numeric division for non-zero denominators.","fixture":"examples/fixtures/fix-safe-divide","target_file":"solution.py","required_skill":"python-bugfix","timeout_seconds":20,"suite_version":"1.0","tags":["exceptions","edge-case"]},
+    {"id":"fix-inclusive-range","description":"Make in_range treat both endpoints as included, while returning False for values outside the interval.","fixture":"examples/fixtures/fix-inclusive-range","target_file":"solution.py","required_skill":"edge-case-testing","timeout_seconds":20,"suite_version":"1.0","tags":["boundaries","regression"]}
+  ]
+}
